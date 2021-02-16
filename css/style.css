@@ -15,6 +15,30 @@
   position: relative;
   z-index: 1;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.color-cover .icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.color-cover .icon i {
+  background: #000000ab;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.color-cover .icon i:active {
+  background: #000;
 }
 
 .color-shower {
