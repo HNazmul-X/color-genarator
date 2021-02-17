@@ -74,7 +74,7 @@
     }
 }
 
-#selected-item {
+#selected-item{
     height: 400px;
     background: #ffdaf7f6;
     margin: 20px;
@@ -92,6 +92,18 @@
 .selected-color-card {
     height: 50px;
     border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    .times-icon{
+        position: absolute;
+        font-size:15px;
+        background:#000000ab;
+        color:white;
+        padding:5px;
+        right: -5px;
+        top: -5px;
+        border-radius: 50%;
+    }
 }
 
 footer {
@@ -104,4 +116,60 @@ footer {
     //         color:#FB4ED5
     //     }
     // }
+}
+
+/* my alert */
+.my-alert-cover {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.212);
+    top:0px;
+    left: 0px;
+    z-index: 10000000000-1;
+
+    display: none;
+
+    .my-alert {
+        width: 300px;
+        padding: 20px;
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        z-index: 10000000000;
+        border-radius: 20px;
+        animation: up-down 0.9s cubic-bezier(0.46, 1.33, 0.95, 1.91) forwards;
+    }
+}
+
+@keyframes up-down{
+    0%{
+        top:-100%;
+    }
+    20%{
+        top:5%;
+    }
+    30%{
+        top:10%;
+    }
+    40%{
+        top:15%;
+    }
+    50%{
+        top:20;
+    }
+    70%{
+        top:23%;
+    }
+    80%{
+        top:26%;
+    }
+    90%{
+        top:29%;
+    }
+    100%{
+        top:30%;
+    }
 }
